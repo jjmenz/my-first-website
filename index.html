@@ -12,23 +12,24 @@
 
     <header>
         <nav class="navbar">
-            <ul class="nav-left">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Canopy Suites</a></li>
-                <li><a href="#">Meadow Rooms</a></li>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="infex.html" aria-current="page">Home</a></li>
+                <li><a href="pages/canopy-suites.html">Canopy Suites</a></li>
+                <li><a href="pages/meadow-rooms.html">Meadow Rooms</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            
+
             <figure class="logo">
                 <img src="logo.png" alt="Noosa Pet Resort logo">
             </figure>
 
-            <div class="nav-right">
-                <button aria-label="Search">🔍</button>
-                <button aria-label="Cart">🛍️</button>
+            <div class="nav-utlities">
+                    <button type="button" aria-label="Search">🔍</button>
+                    <button type="button" aria-label="Shopping Bag">🛍️</button>
             </div>
-
         </nav>
         
     </header>
@@ -55,13 +56,13 @@
         <article class="card">
             <img src="canopy-suites.jpg" alt="Canopy Suites cabin in the forest">
                 <h2>Canopy Suites</h2>
-                <a href="#" class="book-now">Book now →</a>
+                <a href="pages/canopy-suites.html" class="book-now">Book now →</a>
         </article>
 
     <article class="card">
         <img src="meadow-rooms.jpg" alt="Meadow Rooms exterior with walking path">
         <h2>Meadow Rooms</h2>
-        <a href="#" class="book-now">Book now →</a>
+        <a href="pages/meadow-rooms.html" class="book-now">Book now →</a>
     </article>
 </section>
 
@@ -112,7 +113,7 @@
         
     </footer>
     
-<script src="script.js"></script>
+<script src="scripts/homepage.js"></script>
 
 </body>
 </html>
