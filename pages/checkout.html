@@ -41,22 +41,7 @@
 
             <section class="order-details">
                 <h2>Order Details</h2>
-
-                <article class="order-item">
-                    <img src="willow-suite.jpg" alt="Canopy Suite Willow exterior">
-                    <div class="order-info">
-                        <p><strong>Canopy Suite (Willow)</strong> - 27th April</p>
-                        <p>$80</p>
-                    </div>
-                </article>
-
-                <article class="order-item">
-                    <img src="meadow-room.jpg" alt="Meadow Room exterior">
-                    <div class="order-info">
-                        <p><strong>Meadow Room</strong> - 29th April</p>
-                        <p>$55</p>
-                    </div>
-                </article>
+                <div id="order-items"></div>
             </section>
 
             <section class="payment-info">
@@ -87,8 +72,8 @@
 
             <section class="summary">
                 <h2>Summary</h2>
-                <p>Total <strong>$135</strong></p>
-                <button type="button">Confirm Payment</button>
+                <p>Total <strong id="cart-total">$0</strong></p>
+                <button type="button" id="confirm-payment">Confirm Payment</button>
             </section>
         </div>
 
