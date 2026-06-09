@@ -64,7 +64,7 @@ if (localStorage.getItem('noosaSeeded') !== 'true') {
     saveCart([{
         id: 'willow',
         name: 'Canopy Suite (Willow)',
-        image: 'willow-suite.jpg',
+        image: '../images/willow-suite.jpg',
         date: '27th April',
         price: 80
     }]);
@@ -76,11 +76,12 @@ const inPagesDir = window.location.pathname.includes('/pages/');
 const checkoutUrl = inPagesDir ? 'checkout.html' : 'pages/checkout.html';
 
 const bagButton = document.querySelector('[aria-label="Shopping Bag"]');
+const bagCountEl = bagButton ? bagButton.querySelector('.bag-count') : null;
 
 function updateBagCount() {
-    if (!bagButton) return;
+    if (!bagCountEl) return;
     const count = getCart().length;
-    bagButton.textContent = count > 0 ? `🛍️ ${count}` : '🛍️';
+    bagCountEl.textContent = count > 0 ? count : '';
 }
 
 if (bagButton) {
