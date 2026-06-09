@@ -546,6 +546,28 @@ footer address {
     font-weight: 500;
 }
 
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-utilities button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-utilities button img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.bag-count {
+    font-size: 13px;
+    color: #2F3E2F;
+}
 
 @media (max-width: 768px) {
 
@@ -555,7 +577,7 @@ footer address {
     }
 
     .nav-toggle { display: block; order: 1; }
-    .logo       { order: 2; }
+    .logo { order: 2; position: static; transform: none; }
     .nav-utilities { order: 3; }
 
     .nav-links {
